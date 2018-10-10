@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>United Kingdom</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Destino project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+<style>
+.dropbtn {
+
+background-color:#131a2f;
+color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #E0E0E0;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FF0000;}
+
+.dropdown:hover .hide{
+	display:none;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 800px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:-320px;
+    max-height: 550px;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content1 .column a:hover {background-color: #E0E0E0;}
+
+.dropdown:hover .dropdown-content1 {display: block;
+
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    height: 380px;
+}
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #E0E0E0;
+}
+
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    height: 150px;
+}
+
+
+.column1 a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.tags_content td{
+	padding-bottom: 3px;
+	padding-right: 4px;
+}
+.footer_about .tag .colorlib_footer_links{
+	color:#fff;
+}
+.dropbtn.active a
+{
+	color: #fe435b;
+}
+.drobtn.active::after
+{
+	display: block;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fe435b;
+	content: '';
+}
+
+</style>
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_container d-flex flex-row align-items-center justify-content-start">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								
+								<div class="logo_image"><img src="images/logo12.jpg" alt=""></div>
+							</div>
+						</div>
+
+						<!-- Main Navigation -->
+						<nav class="main_nav ml-auto">
+							<ul class="main_nav_list">
+								<li class="main_nav_item active"><a href="index.html">Home</a></li>
+							
+    
+ <li class="main_nav_item"><a href="about.html">About Us</a></li>
+ 
+
+
+								<div class="dropdown">
+  <button class="dropbtn">International</button>
+   <div class="dropdown-content1">
+  	<div class="column">
+    <a href="aus.html">Australia</a>
+    <a href="bali.html">Bali</a>
+    <a href="can.html">	Canada</a>
+    <a href="chi.html">China</a>
+    <a href="dub.html">Dubai</a>
+    <a href="fij.html">Fiji</a>
+  </div>
+  <div class="column">
+    <a href="fra.html">France</a>
+    <a href="gre.html">Greece</a>
+    <a href="hon.html">Hong Kong & Macau</a>
+    <a href="ita.html">Italy</a>
+    <a href="jor.html">Jordan</a>
+    <a href="ken.html">Kenya</a>
+  </div>
+  <div class="column">
+    <a href="mal.html">Malaysia</a>
+    <a href="mald.html">Maldives</a>
+    <a href="mau.html">Mauritius</a>
+    <a href="new.html">New Zealand</a>
+    <a href="sca.html">Scandinavia</a>
+    <a href="sin.html">Singapore</a>
+  </div>
+  <div class="column">
+    <a href="sou.html">South Africa</a>
+    <a href="spa.html">Spain</a>
+    <a href="sri.html">	Sri Lanka</a>
+    <a href="swi.html">Switzerland</a>
+    <a href="tha.html">Thailand</a>
+    <a href="tur.html">Turkey</a>
+  </div>
+  <div class="column">
+    <a href="uni.html">United Kingdom</a>
+    <a href="usa.html">USA</a>
+    <a href="vie.html">Vietnam</a>
+  </div>
+
+</div>
+
+</div>
+			<div class="dropdown">
+  <button class="dropbtn">Domestic</button>
+  <div class="dropdown-content">
+    <a href="goa.html">Goa</a>
+    <a href="ker.html">Kerala</a>
+    <a href="and.html">	Andaman</a>
+    <a href="man.html">Manali</a>
+    <a href="shi.html">Shimla</a>
+    <a href="st.html">Southern Triangle</a>
+     <a href="jim.html">Jim Corbett</a>
+      <a href="nan.html">Nainital</a>
+       <a href="raj.html">Rajasthan</a>
+  </div>
+</div>
+                                      <li class="main_nav_item"><a href="cruises.html">Cruises</a></li>
+                                     <div class="dropdown">
+                                        <button class="dropbtn">Travel Services</button>
+                                          <div class="dropdown-content">
+                                          	<a href="news.html#visa">Visa Assistance</a>
+							                <a href="news.html#ins">Travel Insurance</a>
+							            </div>
+							        </div>
+
+							      <li class="main_nav_item">  <a href="contact.html">Contact Us</a></li>
+
+								
+							</ul>
+						</nav>
+
+						<!-- Search -->
+						<div class="search">
+							<form action="#" class="search_form">
+								<input type="search" name="search_input" class="search_input ctrl_class" required="required" placeholder="Keyword">
+								<button type="submit" class="search_button ml-auto ctrl_class"><img src="images/search.png" alt=""></button>
+							</form>
+						</div>
+
+						<!-- Hamburger -->
+						<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<div class="menu_search_form_container">
+					<form action="#" id="menu_search_form">
+						<input type="search" class="menu_search_input menu_mm">
+						<button id="menu_search_submit" class="menu_search_submit" type="submit"><img src="images/search_2.png" alt=""></button>
+					</form>
+				</div>
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="about.html">About us</a></li>
+					<li class="menu_item menu_mm"><div class="dropdown"><a class="drobtn">International</a>
+
+                           <div class="dropdown-content">
+  <a href="aus.html">Australia</a>
+    <a href="bali.html">Bali</a>
+    <a href="can.html">	Canada</a>
+    <a href="chi.html">China</a>
+    <a href="dub.html">Dubai</a>
+    <a href="fij.html">Fiji</a>
+    <a href="more.html">More Places</a>
+  </div>
+
+
+
+
+
+
+
+					</div></li>
+
+					<li class="menu_item menu_mm"><div class="dropdown"><a class="drobtn">Domestic</a>
+
+                           <div class="dropdown-content">
+   <a href="goa.html">Goa</a>
+    <a href="ker.html">Kerala</a>
+    <a href="and.html">	Andaman</a>
+    <a href="man.html">Manali</a>
+    <a href="shi.html">Shimla</a>
+    <a href="st.html">Southern Triangle</a>
+     <a href="jim.html">Jim Corbett</a>
+      <a href="nan.html">Nainital</a>
+       <a href="raj.html">Rajasthan</a>
+  </div>
+</div>
+					<li class="menu_item menu_mm"><a href="news.html">Travel Services</a></li>
+					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+					
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+		   
+		</div>
+
+		</div>
+
+	</div>
+
+	
+	<!-- Home -->
+
+	<div class="home">
+		<!-- Image by https://unsplash.com/@peecho -->
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/uk.jpeg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_content">
+						<div class="home_content_inner">
+							<div class="home_title">International Packages</div>
+							<div class="home_breadcrumbs">
+								<ul class="home_breadcrumbs_list">
+									<li class="home_breadcrumb"><a href="index.html">Home</a></li>
+									<li class="home_breadcrumb">International Packages</li>
+										<li class="home_breadcrumb">United Kingdom</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Find Form -->
+
+	
+	<!-- Offers -->
+
+	<div class="offers">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h2>Top destinations in Europe</h2>
+						<div>take a look at these offers</div>
+					</div>
+				</div>
+			</div>
+			<div class="row filtering_row">
+				<div class="col">
+					<div class="sorting_group_1">
+						<ul class="item_sorting">
+							<li>
+								<span class="sorting_text">Filter by</span>
+								<i class="fa fa-angle-down"></i>
+								<ul>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Show All</span></li>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Name</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Stars</span>
+								<i class="fa fa-angle-down"></i>
+								<ul>
+									<li class="item_filter_btn" data-filter="*"><span>Show All</span></li>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'><span>Ascending</span></li>
+									<li class="item_filter_btn" data-filter=".rating_1"><span>1</span></li>
+									<li class="item_filter_btn" data-filter=".rating_2"><span>2</span></li>
+									<li class="item_filter_btn" data-filter=".rating_3"><span>3</span></li>
+									<li class="item_filter_btn" data-filter=".rating_4"><span>4</span></li>
+									<li class="item_filter_btn" data-filter=".rating_5"><span>5</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Price</span>
+								<i class="fa fa-angle-down"></i>
+								<ul>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default</span></li>
+									<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
+								</ul>
+							</li>
+							<li>
+								<span class="sorting_text">Facility</span>
+								<i class="fa fa-angle-down"></i>
+								<ul>
+									<li><span>Facility</span></li>
+									<li><span>Facility</span></li>
+									<li><span>Facility</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="sorting_group_2 clearfix">
+						<ul>
+							<li>Airplane X</li>
+							<li>5 stars X</li>
+							<li>Romantic X</li>
+						</ul>
+						<div class="sorting_icons clearfix">
+							<div class="detail_view"><i class="fa fa-bars" aria-hidden="true"></i></div>
+							<div class="box_view"><i class="fa fa-th-large" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="items item_grid clearfix">
+
+						<!-- Item -->
+					  <div class="item clearfix rating_5">
+							<div class="item_image"><img src="images/uk.jpeg" alt=""></div>
+							<div class="item_content">
+								<div class="item_price">From $490</div>
+								<div class="item_title">United Kingdom</div>
+								<ul>
+									<li>1 person</li>
+									<li>8 nights</li>
+									<li>9 days</li>
+									<li>3 star hotel</li>
+								</ul>
+								<div class="rating rating_5" data-rating="5">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="item_text">
+
+
+
+<p>
+In UK you’ll find charming villages, rolling hills, wild landscapes, wonderful castles, alternative culture, and some of the world’s most iconic sites. Visit our travel guide to explore incredible places to visit in United Kingdom – tower of London, Hylands house and estate, St Paul’s Cathedral, Westminster Abbey, Flamingo Land Theme Park and Zoo, Chester Zoo, Windermere Boat Cruises, The Royal Academy of Arts, Stonehenge, The house of parliament and Big Ben, etc.</p>
+
+<p>
+
+DAY 01 – Arrive at Edinburgh</p>
+<p>
+Arrive at Edinburgh International Airport. Take transfers to Hotel at your own. Check in Hotel. Rest of time is free for your own activities. Overnight Stay in Edinburgh.</p>
+<p>
+
+DAY 02 – Loch Ness, Glencoe & the Highlands</p>
+<p>
+A full day tour, taking in some of the most dramatic scenery of the Scottish Highlands From Edinburgh we travel northwest, passing the imposing Stirling Castle, before making our first stop at Kilmahog. We travel on through Rob Roy Country of Clans MacGregor and Campbell then over the desolate landscape of Rannoch Moor and the Black Mount to Glencoe, one of Scotland's most famous glens, site of the 1692 massacre of the Clan MacDonald. Continuing via Loch Linnhe, we stop in the Fort William area for lunch then continue into the natural beauty of the Great Glen as we pass beneath Britain's highest mountain, Ben Nevis. Travelling on, we admire the Caledonian Canal and the pretty village of Fort Augustus, enjoying spectacular views of Loch Ness as we drive along the 24-mile shoreline to Urquhart Castle. Loch Ness, 24 miles long and over 700 feet deep, is more famous for its sightings of the Loch Ness monster, affectionately known as "Nessie". Spend approximately 2 hours at Loch Ness, where you can choose to take a wonderful Jacobite loch cruise and explore the ruins of Urquhart Castle and its modern visitor centre. At Inverness, Capital of the Highlands, we start our return for home, crossing the Grampian Mountains and the woodland scenery of Perthshire, including the Forest of Atholl, with an evening stop at the Victorian resort town of Pitlochry. 
+Transport by luxurious 16-seat Mercedes coach, services of a highly knowledgeable professional Timber bush driver guide and the Timber bush Pocket Pass, which entitles the holder to discounts at a range of venues in Glasgow and Edinburgh. 
+Please arrive at the departure point approximately 15 minutes before the departure time, as missed tours cannot be refunded. Children under 5 years of age cannot be carried, due to insurance reasons. Entrances at the attractions not included. Overnight Stay in Edinburgh</p>
+<p>
+
+DAY 03 -04 – Day is Free for own activities</p>
+<p>
+Breakfast will serve at Hotel. Day is free for own activities. 
+Overnight Stay in Edinburgh
+</p>
+<p>
+DAY 05 – Edinburgh – London</p>
+<p>
+
+Arrive at Edinburgh Station & transfer to London Station through local train. Take transfers to Hotel at your own. Check in Hotel. Rest of time is free for your own activities. 
+Overnight Stay in London</p>
+<p>
+
+DAY 06 - London City Tour, United Kingdom</p>
+<p>
+A complete full day tour of London including St Paul's Cathedral, Changing of the Guard, the Tower of London and a Thames River Cruise. <br>
+The tour begins with a panoramic drive around parliament square to see Westminster Abbey, where many Kings, Queens, Statesmen, poets and writers are buried. See Big Ben and the Houses of Parliaments. You'll visit St Paul's Cathedral where you'll have a guided tour. It was the wedding place of Prince Charles and Princess Diana plus many other special Royal occasions. We'll then drive on to Buckingham Palace where we'll see the famous ceremony of the Changing of the Guards. After this we'll make our way to a traditional English pub where you'll have the opportunity to enjoy a traditional English dish of Fish and chips or Sausages and mash (lunch not included). On arrival at the Tower of London the splendidly dressed Beefeaters will tell you about the Tower's history and the crown Jewels. After visiting the Tower of London, you will have the option to finish the tour and join a Thames River cruise where you'll get stunning uninterrupted views of the Gothic style House of Parliament or keep your cruise ticket to use at your leisure another day.<br>
+Transportation by coach, English speaking guide, entry to St Paul's Cathedral and The Tower of London and the Jewel House to see the Crown Jewels, opportunity for a traditional pub lunch, a cruise on the River Thames to be used on the day of the tour or at leisure on another day. Occasionally there may not be a changing of the Guard. On these occasions we will visit Horse guards Parade. We will visit the cloisters and chapter House at Westminster Abbey or the Imperial War Museum. Due to church services St Paul's Cathedral is closed to visitors on Sundays and possibly on other days without prior notice, instead we will stop for photo stop and spend more time in the Tower of London. Lunch is not included in the tour price. Overnight Stay in London
+</p>
+<p>
+DAY 07 - London Eye or Madame Tussauds and Marvel Super Heroes 4D</p>
+<p>
+Take a flight on Merlin Entertainment's London Eye, a visually striking structure and the world's largest observation wheel. As you ascend over the Thames you will see London's famous streets, churches, palaces and monuments spread out below in a panoramic scene giving you a new perspective of a great city! On a clear day the views can stretch as far as 25 miles to Windsor Castle. Visitor to the London Eye can now experience a four minute 4D film focused on the journey of a little girl and her father in London in which they visit the London Eye and enjoy a spectacular take on the capital. Their experience is brought to life with vibrant 3D images of colourful parties and events inside the London Eye capsules, dramatic firework displays, snowfall over the city, revolutionary aerial footage of other iconic landmarks and sophisticated, fun 4D effects. Visitors will feel like they are really there. <br>
+Madame Tussauds and Marvel Super Heroes 4D<br>
+Visit Madame Tussauds for a fully interactive experience. You can interact with the rich and famous and also enter the interactive show dome plus enjoy the Marvel Super Heroes 4D experience.<br>
+Madame Tussauds is one of London's hottest attractions. It’s both visually immersive and interactive and should be top of your list when visiting London. As you wander around Madame Tussauds you will stumble across an endless number of famous faces including David Beckham, Kylie Minogue, President Bush, Tony Blair and many more. You can also interact with the model celebrities, for example, you can be there when David Beckham prepares to take one of his famous free kicks and feel the beat of his heart and tremble as the floor vibrates beneath your feet!! Then you can go through to the London Stardome and explore this interactive show dome. You will also get to experience 'Scream' which is a maximum security prison taken over by the unhinged inmates, their mission is to give you nightmares. This is not suitable for children under the aged of 12 or for people of a nervous disposition. Now also offering a new visitor experience Marvel Super Heroes 4D that will bring to life some of the world's best loved Super Heroes through a mix of 4D animation, interactive themed areas and startling realistic Madame Tussauds wax figures. Skip the queues by reporting directly to Doors 3 and 4, the pre-booked ticket entrance where you need to exchange your voucher for your joint ticket to Madame Tussauds.<br>
+Entrance to Madame Tussauds with Marvel Super Heroes 4D experience</p>
+<p>
+
+DAY 08 - Day Leisure</p>
+<p>
+Breakfast will serve at Hotel. Rest of the day is free for own activities. Overnight Stay in London
+</p>
+<p>
+DAY 09 - Check Out London</p>
+<p>
+After Breakfast check out from hotel. Take transfers from Hotel to Airport to board your flight to India.
+</p>
+</div>
+</div>
+</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="pages">
+						<ul class="pages_list">
+							<li class="page active"><a href="#">01.</a></li>
+							<li class="page"><a href="#">02.</a></li>
+							<li class="page"><a href="#">03.</a></li>
+							<li class="page"><a href="#">04.</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+
+	<div class="newsletter">
+		<!-- Image by https://unsplash.com/@garciasaldana_ -->
+		<div class="newsletter_background" style="background-image:url(images/newsletter.jpg)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="newsletter_content">
+						<div class="newsletter_title text-center">Subscribe to our Newsletter</div>
+						<div class="newsletter_form_container">
+							<form action="#" id="newsletter_form" class="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-content-center justify-content-between">
+									<input type="email" id="newsletter_input" class="newsletter_input" placeholder="Your E-mail Address">
+									<button type="submit" id="newsletter_button" class="newsletter_button">Subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-lg-3 footer_col">
+					<div class="footer_about">
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<div>Reisz Travels</div>
+								<div>Travel Agency</div>
+								<div class="logo_image"><img src="images/logo.png" alt=""></div>
+							</div>
+						</div>
+						<div class="footer_about_text"><p style="font-size:13px;color:#ffffff;text-align:justify">We, a team of dedicated professionals, deliver optimum expertise to ensure complete customer satisfaction. We always strive to provide exotic and authentic travel experience that you never forget. Our tour designers and planners organize your tour, you will always remember and cherish. We have unique contact book and preferred partner with leading luxury hotels across the globe.</p>
+
+<p style="font-size:13px;color:#ffffff;text-align:justify">You will definitely enjoy our tour package that you will not only recommend it but come back and take another tour with us. </p>
+
+<div class="contact_info_social">
+								<ul>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+</div>
+					</div>
+				</div>
+
+
+
+	
+
+				<!-- Footer Column -->
+				
+
+							<!-- Footer Latest Post -->
+							
+
+							<!-- Footer Latest Post -->
+							<!-- Footer Latest Post -->
+						<div class="col-lg-6 footer_col">
+					<div class="tags footer_tags">
+				
+						<div class="footer_title" id="about">International Packages</div>
+						<ul class="tags_content d-flex flex-row flex-wrap align-items-start justify-content-start">
+							<table>
+								<tr>
+							<td><li class="tag"><a href="ant.html">Antarctica</a></li></td>
+							<td><li class="tag"><a href="aus.html">Australia</a></li></td>
+							<td><li class="tag"><a href="bali.html">Bali</a></li></td>
+							
+							<td><li class="tag"><a href="can.html">Canada</a></li></td>
+						</tr>
+						<tr>
+							<td><li class="tag"><a href="dub.html">Dubai</a></li></td>
+							<td><li class="tag"><a href="fij.html">Fiji</a></li></td>			
+							<td><li class="tag"><a href="fra.html">France</a></li></td>
+							<td><li class="tag"><a href="gre.html">Greece</a></li></td>
+						</tr>
+						<tr>
+
+						<td>	<li class="tag"><a href="hon.html">Hong Kong</a></li></td>
+							<td><li class="tag"><a href="ita.html">Italy</a></li></td>
+							<td><li class="tag"><a href="jor.html">Jordan</a></li></td>
+							<td><li class="tag"><a href="ken.html">Kenya</a></li></td>
+						</tr>
+						<tr>
+
+						<td>	<li class="tag"><a href="mal.html">Malaysia</a></li></td>
+							<td><li class="tag"><a href="mald.html">Maldives</a></li></td>
+							<td><li class="tag"><a href="mau.html">Mauritius</a></li></td>
+							<td><li class="tag"><a href="new.html">New Zealand</a></li></td>
+						</tr>
+							<tr>
+							<td><li class="tag"><a href="sca.html">Scandinavia</a></li></td>
+							<td><li class="tag"><a href="sin.html">Singapore</a></li></td>			
+							<td><li class="tag"><a href="sou.html">South Africa</a></li></td>
+							<td><li class="tag"><a href="spa.html">Spain</a></li></td>
+						</tr>
+							<tr>
+							<td><li class="tag"><a href="sri.html">Sri Lanka</a></li></td>
+							<td><li class="tag"><a href="swi.html">Switzerland</a></li></td>			
+							<td><li class="tag"><a href="tha.html">Thailand</a></li></td>
+							<td><li class="tag"><a href="tur.html">Turkey</a></li></td>
+						</tr>
+						<tr>
+							<td><li class="tag"><a href="uni.html">UK</a></li></td>
+							<td><li class="tag"><a href="usa.html">USA</a></li></td>			
+							<td><li class="tag"><a href="vie.html">Vietnam</a></li></td>
+							
+						</tr>
+							</table>
+						</ul><br>
+
+						<div class="footer_title" id="dm">Domestic Packages</div>
+						<ul class="tags_content d-flex flex-row flex-wrap align-items-start justify-content-start">
+						<table>
+							<tr>
+							<td><li class="tag"><a href="goa.html">Goa</a></li></td>
+							<td><li class="tag"><a href="ker.html">Kerala</a></li></td>
+							<td><li class="tag"><a href="and.html">Andaman</a></li></td>
+							<td><li class="tag"><a href="kas.html">Kashmir</a></li></td>
+							</tr>
+							<tr>
+							<td><li class="tag"><a href="man.html">Manali</a></li></td>
+							<td><li class="tag"><a href="shi.html">Shimla</a></li></td>
+							<td><li class="tag"><a href="st.html">Southern Triangle</a></li></td>
+							<td><li class="tag"><a href="jim.html">Jim Corbett</a></li></td>
+						</tr>
+						<tr>
+
+							<td><li class="tag"><a href="nan.html">Nainital</a></li></td>
+							<td><li class="tag"><a href="raj.html">Rajasthan</a></li></td>
+						</tr>
+					</table>
+						</ul>
+				
+					</div>
+				</div>
+
+
+						
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_col">
+					<div class="tags footer_tags">
+						<div class="footer_about">
+						<!-- Logo -->
+							<div class="footer_title" id="about">Get in Touch</div>
+							<br>
+							<br>
+						<ul class="colorlib-footer-links">
+							<li><a href="tel://9990798848">9990798848, 9971688848</a></li>
+								<li><a href="mailto:shashank@reisztravels.in">shashank@reisztravels.in</a></li><br>
+							<li>A-2751, 1st Floor, Green Field Colony<br>Faridabad, Haryana-121003</li><br>
+					       	<li><iframe width="350" height="300" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=A-2751%2C%201st%20Floor%2C%20Green%20Field%20Colony%2C%20Faridabad%2C%20Haryana-121003+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></li>
+						
+						</ul>
+						
+</div>
+						
+					</div>
+				</div>
+
+
+
+				</div>
+			</div>
+		
+	</footer>
+	
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/offers_custom.js"></script>
+</body>
+</html>

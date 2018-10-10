@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reisz Travels</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Destino project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<style>
+.dropbtn {
+
+background-color:#131a2f;
+color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #E0E0E0;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FF0000;}
+
+.dropdown:hover .hide{
+	display:none;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 800px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:-320px;
+    max-height: 550px;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content1 .column a:hover {background-color: #E0E0E0;}
+
+.dropdown:hover .dropdown-content1 {display: block;
+
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    height: 380px;
+}
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #E0E0E0;
+}
+
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    height: 150px;
+}
+
+
+.column1 a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.tags_content td{
+	padding-bottom: 3px;
+	padding-right: 4px;
+}
+.footer_about .tag .colorlib_footer_links{
+	color:#fff;
+}
+.dropbtn.active a
+{
+	color: #fe435b;
+}
+.drobtn.active::after
+{
+	display: block;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fe435b;
+	content: '';
+}
+
+</style>
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_container d-flex flex-row align-items-center justify-content-start">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								
+								<div class="logo_image"><img src="images/logo12.jpg" alt=""></div>
+							</div>
+						</div>
+
+						<!-- Main Navigation -->
+						<nav class="main_nav ml-auto">
+							<ul class="main_nav_list">
+								<li class="main_nav_item active"><a href="index.html">Home</a></li>
+							
+    
+ <li class="main_nav_item"><a href="about.html">About Us</a></li>
+ 
+
+
+								<div class="dropdown">
+  <button class="dropbtn">International</button>
+   <div class="dropdown-content1">
+  	<div class="column">
+    <a href="aus.html">Australia</a>
+    <a href="bali.html">Bali</a>
+    <a href="can.html">	Canada</a>
+    <a href="chi.html">China</a>
+    <a href="dub.html">Dubai</a>
+    <a href="fij.html">Fiji</a>
+  </div>
+  <div class="column">
+    <a href="fra.html">France</a>
+    <a href="gre.html">Greece</a>
+    <a href="hon.html">Hong Kong & Macau</a>
+    <a href="ita.html">Italy</a>
+    <a href="jor.html">Jordan</a>
+    <a href="ken.html">Kenya</a>
+  </div>
+  <div class="column">
+    <a href="mal.html">Malaysia</a>
+    <a href="mald.html">Maldives</a>
+    <a href="mau.html">Mauritius</a>
+    <a href="new.html">New Zealand</a>
+    <a href="sca.html">Scandinavia</a>
+    <a href="sin.html">Singapore</a>
+  </div>
+  <div class="column">
+    <a href="sou.html">South Africa</a>
+    <a href="spa.html">Spain</a>
+    <a href="sri.html">	Sri Lanka</a>
+    <a href="swi.html">Switzerland</a>
+    <a href="tha.html">Thailand</a>
+    <a href="tur.html">Turkey</a>
+  </div>
+  <div class="column">
+    <a href="uni.html">United Kingdom</a>
+    <a href="usa.html">USA</a>
+    <a href="vie.html">Vietnam</a>
+  </div>
+
+</div>
+
+</div>
+			<div class="dropdown">
+  <button class="dropbtn">Domestic</button>
+  <div class="dropdown-content">
+    <a href="goa.html">Goa</a>
+    <a href="ker.html">Kerala</a>
+    <a href="and.html">	Andaman</a>
+    <a href="man.html">Manali</a>
+    <a href="shi.html">Shimla</a>
+    <a href="st.html">Southern Triangle</a>
+     <a href="jim.html">Jim Corbett</a>
+      <a href="nan.html">Nainital</a>
+       <a href="raj.html">Rajasthan</a>
+  </div>
+</div>
+                                      <li class="main_nav_item"><a href="cruises.html">Cruises</a></li>
+                                     <div class="dropdown">
+                                        <button class="dropbtn">Travel Services</button>
+                                          <div class="dropdown-content">
+                                          	<a href="news.html#visa">Visa Assistance</a>
+							                <a href="news.html#ins">Travel Insurance</a>
+							            </div>
+							        </div>
+
+							      <li class="main_nav_item">  <a href="contact.html">Contact Us</a></li>
+
+								
+							</ul>
+						</nav>
+
+						<!-- Search -->
+						<div class="search">
+							<form action="#" class="search_form">
+								<input type="search" name="search_input" class="search_input ctrl_class" required="required" placeholder="Keyword">
+								<button type="submit" class="search_button ml-auto ctrl_class"><img src="images/search.png" alt=""></button>
+							</form>
+						</div>
+
+						<!-- Hamburger -->
+						<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<div class="menu_search_form_container">
+					<form action="#" id="menu_search_form">
+						<input type="search" class="menu_search_input menu_mm">
+						<button id="menu_search_submit" class="menu_search_submit" type="submit"><img src="images/search_2.png" alt=""></button>
+					</form>
+				</div>
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="about.html">About us</a></li>
+					<li class="menu_item menu_mm"><div class="dropdown"><a class="drobtn">International</a>
+
+                           <div class="dropdown-content">
+  <a href="aus.html">Australia</a>
+    <a href="bali.html">Bali</a>
+    <a href="can.html">	Canada</a>
+    <a href="chi.html">China</a>
+    <a href="dub.html">Dubai</a>
+    <a href="fij.html">Fiji</a>
+    <a href="more.html">More Places</a>
+  </div>
+
+
+
+
+
+
+
+					</div></li>
+
+					<li class="menu_item menu_mm"><div class="dropdown"><a class="drobtn">Domestic</a>
+
+                           <div class="dropdown-content">
+   <a href="goa.html">Goa</a>
+    <a href="ker.html">Kerala</a>
+    <a href="and.html">	Andaman</a>
+    <a href="man.html">Manali</a>
+    <a href="shi.html">Shimla</a>
+    <a href="st.html">Southern Triangle</a>
+     <a href="jim.html">Jim Corbett</a>
+      <a href="nan.html">Nainital</a>
+       <a href="raj.html">Rajasthan</a>
+  </div>
+</div>
+					<li class="menu_item menu_mm"><a href="news.html">Travel Services</a></li>
+					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+					
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+		   
+		</div>
+
+		</div>
+
+	</div>
+
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background" style="background-image:url(images/a5.jpg)"></div>
+		<div class="home_content">
+			<div class="home_content_inner">
+				<div class="home_text_large">discover</div>
+				<div class="home_text_small">Discover new worlds</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Find Form -->
+
+	
+
+	<!-- Top Destinations -->
+
+	<div class="top">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h2>International Packages</h2>
+						<div>Take a look at these offers</div>
+					</div>
+				</div>
+			</div>
+			<div class="row top_content">
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="#">
+							<div class="top_item_image"><a href="ant.html"><img src="images/antarctica.jpeg" alt="https://unsplash.com/@sgabriel"></a></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text"><a href="ant.html" style="color:white">Antarctica</a></div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="aus.html">
+							<div class="top_item_image"><img src="images/aus.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Australia</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="bali.html">
+							<div class="top_item_image"><img src="images/bali.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Bali</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="can.html">
+							<div class="top_item_image"><img src="images/canada.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Canada</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="dub.html">
+							<div class="top_item_image"><img src="images/dubai.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Dubai</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="fij.html">
+							<div class="top_item_image"><img src="images/fiji.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Fiji</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="fra.html">
+							<div class="top_item_image"><img src="images/top_1.jpg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">France</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="gre.html">
+							<div class="top_item_image"><img src="images/greece.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Greece</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="hon.html">
+							<div class="top_item_image"><img src="images/hongkong.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Hong Kong and Macau</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="ita.html">
+							<div class="top_item_image"><img src="images/italy.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Italy</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="jor.html">
+							<div class="top_item_image"><img src="images/jordon.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Jordan</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="bali.html">
+							<div class="top_item_image"><img src="images/bali.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Kenya</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="mal.html">
+							<div class="top_item_image"><img src="images/top_4.jpg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Malaysia</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="mald.html">
+							<div class="top_item_image"><img src="images/maldives.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Maldives</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="mau.html">
+							<div class="top_item_image"><img src="images/mauritious.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Mauritius</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="">
+							<div class="top_item_image"><img src="images/nz.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">New Zealand</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="sca.html">
+							<div class="top_item_image"><img src="images/sc.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Scandinavia</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="sin.html">
+							<div class="top_item_image"><img src="images/singapore.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Singapore</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="sou.html">
+							<div class="top_item_image"><img src="images/sa.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">South Africa</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="#">
+							<div class="top_item_image"><a href="spa.html"><img src="images/spain.jpeg" alt="https://unsplash.com/@sgabriel"></a></div>
+							<div class="top_item_content">
+								<div class="top_item_price" style="color:black">From $890</div>
+								<div class="top_item_text"><a href="spa.html" style="color:black">Spain</a></div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="sri.html">
+							<div class="top_item_image"><img src="images/sl.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Sri Lanka</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="swi.html">
+							<div class="top_item_image"><img src="images/switzerland.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Switzerland</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="tha.html">
+							<div class="top_item_image"><img src="images/thailand.jpeg" alt="https://unsplash.com/@sgabriel"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Thailand</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="tur.html">
+							<div class="top_item_image"><img src="images/turkey.jpeg" alt="https://unsplash.com/@jenspeter"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Turkey</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="uni.html">
+							<div class="top_item_image"><img src="images/uk.jpeg" alt="https://unsplash.com/@anikindimitry"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">United Kingdom</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="usa.html">
+							<div class="top_item_image"><img src="images/usa.jpeg" alt="https://unsplash.com/@hellolightbulb"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">USA</div>
+							</div>
+						</a>	
+					</div>
+				</div>
+
+
+              			<div class="col-lg-3 col-md-6 top_col">
+
+					<!-- Top Destination Item -->
+					<div class="top_item">
+						<a href="vie.html">
+							<div class="top_item_image"><img src="images/top_4.jpg" alt="https://unsplash.com/@hellolightbulb"></div>
+							<div class="top_item_content">
+								<div class="top_item_price">From $890</div>
+								<div class="top_item_text">Vietnam</div>
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-lg-3 footer_col">
+					<div class="footer_about">
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<div>Reisz Travels</div>
+								<div>Travel Agency</div>
+								<div class="logo_image"><img src="images/logo.png" alt=""></div>
+							</div>
+						</div>
+						<div class="footer_about_text"><p style="font-size:13px;color:#ffffff;text-align:justify">We, a team of dedicated professionals, deliver optimum expertise to ensure complete customer satisfaction. We always strive to provide exotic and authentic travel experience that you never forget. Our tour designers and planners organize your tour, you will always remember and cherish. We have unique contact book and preferred partner with leading luxury hotels across the globe.</p>
+
+<p style="font-size:13px;color:#ffffff;text-align:justify">You will definitely enjoy our tour package that you will not only recommend it but come back and take another tour with us. </p>
+
+<div class="contact_info_social">
+								<ul>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+</div>
+					</div>
+				</div>
+
+
+
+	
+
+				<!-- Footer Column -->
+				
+
+							<!-- Footer Latest Post -->
+							
+
+							<!-- Footer Latest Post -->
+							<!-- Footer Latest Post -->
+						<div class="col-lg-6 footer_col">
+					<div class="tags footer_tags">
+				
+						<div class="footer_title" id="about">International Packages</div>
+						<ul class="tags_content d-flex flex-row flex-wrap align-items-start justify-content-start">
+							<table>
+								<tr>
+							<td><li class="tag"><a href="ant.html">Antarctica</a></li></td>
+							<td><li class="tag"><a href="aus.html">Australia</a></li></td>
+							<td><li class="tag"><a href="bali.html">Bali</a></li></td>
+							
+							<td><li class="tag"><a href="can.html">Canada</a></li></td>
+						</tr>
+						<tr>
+							<td><li class="tag"><a href="dub.html">Dubai</a></li></td>
+							<td><li class="tag"><a href="fij.html">Fiji</a></li></td>			
+							<td><li class="tag"><a href="fra.html">France</a></li></td>
+							<td><li class="tag"><a href="gre.html">Greece</a></li></td>
+						</tr>
+						<tr>
+
+						<td>	<li class="tag"><a href="hon.html">Hong Kong</a></li></td>
+							<td><li class="tag"><a href="ita.html">Italy</a></li></td>
+							<td><li class="tag"><a href="jor.html">Jordan</a></li></td>
+							<td><li class="tag"><a href="ken.html">Kenya</a></li></td>
+						</tr>
+						<tr>
+
+						<td>	<li class="tag"><a href="mal.html">Malaysia</a></li></td>
+							<td><li class="tag"><a href="mald.html">Maldives</a></li></td>
+							<td><li class="tag"><a href="mau.html">Mauritius</a></li></td>
+							<td><li class="tag"><a href="new.html">New Zealand</a></li></td>
+						</tr>
+							<tr>
+							<td><li class="tag"><a href="sca.html">Scandinavia</a></li></td>
+							<td><li class="tag"><a href="sin.html">Singapore</a></li></td>			
+							<td><li class="tag"><a href="sou.html">South Africa</a></li></td>
+							<td><li class="tag"><a href="spa.html">Spain</a></li></td>
+						</tr>
+							<tr>
+							<td><li class="tag"><a href="sri.html">Sri Lanka</a></li></td>
+							<td><li class="tag"><a href="swi.html">Switzerland</a></li></td>			
+							<td><li class="tag"><a href="tha.html">Thailand</a></li></td>
+							<td><li class="tag"><a href="tur.html">Turkey</a></li></td>
+						</tr>
+						<tr>
+							<td><li class="tag"><a href="uni.html">UK</a></li></td>
+							<td><li class="tag"><a href="usa.html">USA</a></li></td>			
+							<td><li class="tag"><a href="vie.html">Vietnam</a></li></td>
+							
+						</tr>
+							</table>
+						</ul><br>
+
+						<div class="footer_title" id="dm">Domestic Packages</div>
+						<ul class="tags_content d-flex flex-row flex-wrap align-items-start justify-content-start">
+						<table>
+							<tr>
+							<td><li class="tag"><a href="goa.html">Goa</a></li></td>
+							<td><li class="tag"><a href="ker.html">Kerala</a></li></td>
+							<td><li class="tag"><a href="and.html">Andaman</a></li></td>
+							<td><li class="tag"><a href="kas.html">Kashmir</a></li></td>
+							</tr>
+							<tr>
+							<td><li class="tag"><a href="man.html">Manali</a></li></td>
+							<td><li class="tag"><a href="shi.html">Shimla</a></li></td>
+							<td><li class="tag"><a href="st.html">Southern Triangle</a></li></td>
+							<td><li class="tag"><a href="jim.html">Jim Corbett</a></li></td>
+						</tr>
+						<tr>
+
+							<td><li class="tag"><a href="nan.html">Nainital</a></li></td>
+							<td><li class="tag"><a href="raj.html">Rajasthan</a></li></td>
+						</tr>
+					</table>
+						</ul>
+				
+					</div>
+				</div>
+
+
+						
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_col">
+					<div class="tags footer_tags">
+						<div class="footer_about">
+						<!-- Logo -->
+							<div class="footer_title" id="about">Get in Touch</div>
+							<br>
+							<br>
+						<ul class="colorlib-footer-links">
+							<li><a href="tel://9990798848">9990798848, 9971688848</a></li>
+								<li><a href="mailto:shashank@reisztravels.in">shashank@reisztravels.in</a></li><br>
+							<li>A-2751, 1st Floor, Green Field Colony<br>Faridabad, Haryana-121003</li><br>
+					       	<li><iframe width="350" height="300" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=A-2751%2C%201st%20Floor%2C%20Green%20Field%20Colony%2C%20Faridabad%2C%20Haryana-121003+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></li>
+						
+						</ul>
+						
+</div>
+						
+					</div>
+				</div>
+
+
+
+				</div>
+			</div>
+		
+	</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

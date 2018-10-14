@@ -421,9 +421,9 @@ section
 
     position: absolute;
     top: -50px !important;
-    left: -250px;
-    width: 100px;
-    height: 100px;
+    left: -300px;
+    width: 200px;
+    height: 200px;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -ms-transition: all 400ms ease;
@@ -433,15 +433,16 @@ section
 }
 .header.scrolled .logo_image
 {
-	width: 40px;
-   top: -25px!important;
-	left: 20px;
+	width: 88px;
+   top: -52px!important;
+	left: -3px;
 }
 .logo_image img
 {
 	max-width: 100%;
 
 }
+
 
 /*********************************
 4.2 Navigation
@@ -463,7 +464,7 @@ section
 	/*padding-left: 22px;
 	padding-right: 22px;*/
 	margin-right: 8px;
-	padding-top: 2px;
+	padding-top: -2px;
 }
 li.main_nav_item.active:after
 {
@@ -1260,6 +1261,11 @@ li.main_nav_item.active:after
 margin-left: 4px!important;
 padding-left: 4px!important;
 
+}
+.q p{
+	
+	font-weight: 450;
+	font-size: 18px;
 }
 .item.box .item_text
 {

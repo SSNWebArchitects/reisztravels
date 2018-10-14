@@ -368,9 +368,9 @@ section
 
     position: absolute;
     top: -50px !important;
-    left: -250px;
-    width: 100px;
-    height: 100px;
+    left: -300px;
+    width: 200px;
+    height: 200px;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -ms-transition: all 400ms ease;
@@ -380,9 +380,9 @@ section
 }
 .header.scrolled .logo_image
 {
-	width: 40px;
-   top: -25px!important;
-	left: 20px;
+	width: 88px;
+   top: -52px!important;
+	left: -3px;
 }
 .logo_image img
 {
@@ -410,7 +410,7 @@ section
 	/*padding-left: 22px;
 	padding-right: 22px;*/
 	margin-right: 8px;
-	padding-top: 2px;
+	padding-top: -2px;
 }
 li.main_nav_item.active:after
 {
@@ -1265,6 +1265,7 @@ li.main_nav_item.active:after
 .popular_item
 {
 	width: calc((100% - 90px) / 4);
+	
 	margin-bottom: 26px;
 }
 .popular_item:nth-last-child(-n+4)
@@ -1274,10 +1275,14 @@ li.main_nav_item.active:after
 .popular_item a
 {
 	display: block;
+		max-width: 100%;
+	max-height: 100%!important;
 }
+
 .popular_item img
 {
 	max-width: 100%;
+	max-height: 100%!important;
 }
 .popular_item_content
 {
